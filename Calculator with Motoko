@@ -1,0 +1,37 @@
+//Calculator
+
+actor Calculator {
+var cell: Int = 0;
+
+//Summation
+public func Summation(s: Int) : async Int {
+  cell += s;
+  cell 
+};
+
+//Substraction 
+public func Substraction(s: Int) : async Int {
+  cell -= s;
+  cell
+};
+
+//Multiplication
+public func Multiplication(s: Int) : async Int {
+  cell *= s;
+  cell
+};
+
+//Division 
+public func Division(s: Int) : async ?Int {
+  if (s == 0){
+    null
+  } else {
+    cell /= s;
+    ?cell
+  };
+};
+//Clear
+public func clear() : async () {
+  cell := 0;
+};
+};
